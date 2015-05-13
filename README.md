@@ -28,7 +28,7 @@ end
 
 ## Sandbox API
 
-Bitreserve supports a sandbox environment for testing purposes. The API for it is located at `https://api-sandbox.bitreserve.org`. To use that, you have to override the environment variable `BITRESERVE_API_URL` with the previously mentioned URL before loading the gem. We recommend [dotenv](https://github.com/bkeepers/dotenv).
+Bitreserve supports a sandbox environment for testing purposes. Authentication for the sandbox API is done via `https://sandbox.bitreserve.org`. To use that, you have to override the environment variable `BITRESERVE_CONNECT_URL` with the previously mentioned URL before loading the gem. We recommend [dotenv](https://github.com/bkeepers/dotenv).
 
 ## Contributing
 

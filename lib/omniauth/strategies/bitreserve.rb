@@ -5,11 +5,14 @@ module OmniAuth
     class Bitreserve < ::OmniAuth::Strategies::OAuth2
       include ::OmniAuth::Strategy
 
-      URL      = ENV['BITRESERVE_API_URL'] || 'https://api.bitreserve.org'
-      PATH     = '/oauth2/authorize'
-
+      URL      = ENV['BITRESERVE_CONNECT_URL'] || 'https://bitreserve.org'
       option :name, :bitreserve
-      option :client_options, site: URL, authorize_url: PATH
+      option :client_options, site: URL
+
+      def initialize(app, *args, &block)
+        super
+        options[:client_options][:authorize_url] = "/authorize/#{args[0]}"
+      end
 
       uid do
         raw_info['id']
