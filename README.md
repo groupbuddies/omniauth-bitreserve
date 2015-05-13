@@ -26,6 +26,10 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 end
 ```
 
+## Sandbox API
+
+Bitreserve supports a sandbox environment for testing purposes. The API for it is located at `https://api-sandbox.bitreserve.org`. To use that, you have to override the environment variable `BITRESERVE_API_URL` with the previously mentioned URL before loading the gem. We recommend [dotenv](https://github.com/bkeepers/dotenv).
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/omniauth-Bitreserve/fork )

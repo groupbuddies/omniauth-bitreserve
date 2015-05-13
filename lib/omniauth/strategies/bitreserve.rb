@@ -6,7 +6,7 @@ module OmniAuth
       include ::OmniAuth::Strategy
 
       URL      = ENV['BITRESERVE_API_URL'] || 'https://api.bitreserve.org'
-      PATH     = '/oauth/authorize'
+      PATH     = '/oauth2/authorize'
 
       option :name, :bitreserve
       option :client_options, site: URL, authorize_url: PATH
