@@ -1,5 +1,5 @@
 module Omniauth
   module Bitreserve
-    VERSION = '0.0.5.pre.alpha'
+    VERSION = '1.0.0'
   end
 end
