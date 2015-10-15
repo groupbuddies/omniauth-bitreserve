@@ -1,2 +1,2 @@
-require 'omniauth-bitreserve'
+require 'omniauth-uphold'
 require 'rspec'

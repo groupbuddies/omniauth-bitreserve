@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'omniauth-bitreserve/version'
+require 'omniauth-uphold/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'omniauth-bitreserve'
-  spec.version       = Omniauth::Bitreserve::VERSION
+  spec.name          = 'omniauth-uphold'
+  spec.version       = Omniauth::Uphold::VERSION
   spec.authors       = ['Miguel Palhas']
-  spec.email         = ['mpalhas@groupbuddies.com']
-  spec.summary       = 'OAuth2 strategy for the Bitreserve API, by Group Buddies'
-  spec.description   = 'OAuth2 strategy for the Bitreserve API, by Group Buddies'
-  spec.homepage      = 'https://github.com/groupbuddies/omniauth-Bitreserve'
+  spec.email         = ['miguel@subvisual.co']
+  spec.summary       = 'OAuth2 strategy for the Uphold API, by Subvisual'
+  spec.description   = 'OAuth2 strategy for the Uphold API, by Subvisual'
+  spec.homepage      = 'https://github.com/subvisual/omniauth-uphold'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
