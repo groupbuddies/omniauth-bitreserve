@@ -31,8 +31,8 @@ end
 Uphold supports a sandbox environment for testing purposes. To use it with this strategy, you'll need to use the following environment variables:
 
 ```
-uphold_URL="https://sandbox.uphold.com"
-uphold_API_URL="https://api-sandbox.uphold.com"
+UPHOLD_URL="https://sandbox.uphold.com"
+UPHOLD_API_URL="https://api-sandbox.uphold.com"
 ```
 
 We recommend [dotenv](https://github.com/bkeepers/dotenv) for this.
