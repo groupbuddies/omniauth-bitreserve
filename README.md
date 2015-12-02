@@ -28,14 +28,15 @@ end
 
 ## Sandbox API
 
-Uphold supports a sandbox environment for testing purposes. To use it with this strategy, you'll need to use the following environment variables:
+Uphold supports a sandbox environment for testing purposes. To use it you will need a different strategy:
 
-```
-UPHOLD_URL="https://sandbox.uphold.com"
-UPHOLD_API_URL="https://api-sandbox.uphold.com"
+```ruby
+Rails.application.config.middleware.use OmniAuth::Builder do
+  provider :uphold_sandbox, 'API_KEY', 'API_SECRET', name: :uphold
+end
 ```
 
-We recommend [dotenv](https://github.com/bkeepers/dotenv) for this.
+You can add `name: :uphold` to make sure it uses the same route names as if you were using the main strategy.
 
 ## Contributing
 
